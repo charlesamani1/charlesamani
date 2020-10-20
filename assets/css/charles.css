@@ -1,0 +1,1516 @@
+/* -----------------------------------------------
+				CSS Styles 
+--------------------------------------------------
+
+    Name: Charles Amani - Personal Portfolio Website
+    Author: Charles Amani
+    Copyright: 2020
+
+--------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	outline: none !important;
+	list-style: none !important;
+	text-decoration: none !important;
+}
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #070708 !important;
+    line-height: 1;
+    color: #ffffff;
+    width: 90%;
+    font-family: 'Playfair Display', serif;
+  
+}
+
+
+#about:target .home-section,
+#service:target .home-section,
+#portfolio:target .home-section,
+#testimonials:target .home-section,
+#contact:target .home-section {
+    -webkit-filter: blur(300px);
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+#home:target .about-section,
+#service:target .about-section,
+#portfolio:target .about-section,
+#testimonials:target .about-section,
+#contact:target .about-section {
+    -webkit-filter: blur(300px);
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    -webkit-animation-direction: reverse;
+}
+
+#home:target .service-section,
+#about:target .service-section,
+#portfolio:target .service-section,
+#testimonials:target .service-section,
+#contact:target .service-section {
+    -webkit-filter: blur(300px);
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+#home:target .portfolio-section,
+#about:target .portfolio-section,
+#service:target .portfolio-section,
+#testimonials:target .portfolio-section,
+#contact:target .portfolio-section {
+    -webkit-filter: blur(300px);
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+
+}
+
+#home:target .contact-section,
+#about:target .contact-section,
+#service:target .contact-section,
+#testimonials:target .contact-section,
+#portfolio:target .contact-section {
+    -webkit-filter: blur(300px);
+    transition-delay: 1s;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+#home:target .testimonial-section,
+#about:target .testimonial-section,
+#service:target .testimonial-section,
+#contact:target .testimonial-section,
+#portfolio:target .testimonial-section {
+    -webkit-filter: blur(300px);
+    transition-delay: 1s;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+/* Section title */
+.section-title {
+    position: relative;
+
+}
+
+.section-title h2 {
+    display: inline-block;
+    font-size: 28px;
+    text-transform: capitalize;
+    position: absolute;
+    padding: 0 0 10px;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    text-align: center;
+
+}
+
+.section-title h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 1px #25ca7c;
+}
+
+.section-title h2:nth-child(2) {
+    color: #25ca7c;
+    /* position: absolute; */
+    position: relative;
+    animation: animate 4s ease-in-out infinite;
+}
+
+
+.section-titleb h2 {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: capitalize;
+    position: absolute;
+    padding: 14px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+
+}
+
+.section-titleb h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 1px #25ca7c;
+}
+
+.section-titleb h2:nth-child(2) {
+    color: #fff;
+    position: relative;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
+                54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%)
+    }
+
+    50% {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%,
+                51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%)
+    }
+}
+
+/* ...................Navigation section................. */
+
+.logo {
+    margin: 0 22px;
+    float: left;
+    transition: 0.3s;
+    margin-right: 5%;
+}
+
+.logo img {
+    height: 57px;
+    width: auto;
+    padding-top: 13px;
+}
+
+.social-icons {
+    position: absolute;
+    width: 42px;
+    bottom: 50px;
+    left: 50px;
+    z-index: 20;
+    cursor: pointer;
+    top: 17%;
+}
+
+.social-icons ul>li {
+    float: left;
+}
+
+.social-icons ul>li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.social-icons ul>li>a {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    width: 42px;
+}
+
+.social-icons ul li a i {
+    color: #25ca7f;
+}
+
+.footer {
+    height: 5%;
+}
+
+.footer p {
+    position: absolute;
+    left: 40%;
+
+    color: #fff !important;
+    bottom: 3% !important;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    
+}
+
+.top-link {
+    margin: 0 60px;
+    margin-left: 12.5%;
+    position: relative;
+    height: 60px;
+    padding-left: 30%;
+
+}
+
+.top-link li {
+    display: inline-flex;
+
+}
+
+.top-link .upper-right {
+    padding-top: 10px !important;
+    margin-right: 10%;
+}
+
+.top-link .upper-left {
+    padding-top: 20px !important;
+    padding-right: 20%;
+}
+
+.top-right {
+    margin-left: 20%;
+    transform: rotateX(140deg);
+}
+
+.navigation {
+    display: block;
+}
+
+.navigation .left li,
+.navigation .right li {
+    list-style: none;
+}
+
+.navigation .bottom a:hover,
+.navigation .upper a:hover,
+.navigation .upper-right a:hover,
+.navigation .upper-left a:hover {
+    color: #25ca7f !important;
+}
+
+.left {
+    left: 10%;
+    top: 20% !important;
+    position: absolute;
+    width: 2%;
+    height: 70.5% !important;
+}
+
+.upper {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding-top: 150px;
+    text-orientation: sideways-right;
+}
+
+.bottom {
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    padding-top: 150%;
+}
+
+.right {
+    right: 4.5%;
+    top: 20% !important;
+    position: absolute;
+    width: 2%;
+    height: 70.5% !important;
+    float: right !important;
+
+}
+
+li a {
+    color: #fff;
+}
+
+li a:hover {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+/* ....................social icons...............................  */
+.pt-social .experience .item {
+    position: relative;
+    padding-top: 15px;
+    padding-left: 26px;
+    margin-bottom: 23px;
+
+}
+
+.pt-social .experience .item:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 180%;
+    top: 0;
+    left: 0;
+    background-color: #25ca7f !important;
+}
+
+.pt-social .experience .item:hover main:before {
+    background-color: #25ca7f !important;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+}
+
+.pt-social .experience .item:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    top: 25px;
+    left: 6px;
+    background-color: #25ca7f !important;
+}
+
+
+.pt-social .experience .item .main:before {
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    width: 13px;
+    height: 13px;
+    left: -6px;
+    background-color: #0e0f10;
+    border: 2px solid #25ca7f;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.pt-social .experience .item:hover .main:before {
+    background-color: #25ca7f !important;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+
+}
+
+.pt-social .experience .item .main:hover i {
+    transform: scale(1.5);
+}
+
+.dot {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    width: 12px;
+    height: 1px;
+    background-color: #25ca7f;
+    left: 3px;
+ }
+
+.line {
+    position: relative;
+    border: solid 1px #25ca7f;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    margin-left: 8px;
+    border-radius: 50%;
+    top: -4px;
+}
+.arrow {
+    border: solid #25ca7f;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+}
+
+.angle {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow-home {
+    border: solid #25ca7f;
+    border-width: 1px 0px 0px 1px;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+}
+
+.line-home {
+    position: relative;
+    border: solid 1px #25ca7f;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 50%;
+    top: -4px;
+}
+
+.dot-home {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    width: 12px;
+    height: 1px;
+    background-color: #25ca7f;
+    left: -3px;
+}
+
+.top-link i:hover {
+    right: -3px;
+}
+
+.dot-home:hover {
+    left: -1px;
+}
+
+.arrow-service {
+    border: solid #25ca7f;
+    border-width: 1px 0px 0px 1px;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    right: 2px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+}
+
+.arrow-service:hover {
+    top: 5px;
+}
+
+
+.line-service {
+    position: relative;
+    border: solid 1px #25ca7f;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    margin-left: 2px;
+    border-radius: 50%;
+    top: 8px;
+}
+
+.dot-service {
+
+    display: inline-block;
+
+    position: relative;
+    top: 11px;
+    width: 1px;
+    height: 12px;
+    background-color: #25ca7f;
+    left: 3px;
+   
+}
+
+.angle-service {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow-contact {
+    border: solid #25ca7f;
+    border-width: 0px 1px 1px 0px;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    right: .9px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+}
+
+.arrow-contact:hover {
+    top: 5px;
+}
+
+.line-contact {
+    position: relative;
+    border: solid 1px #25ca7f;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    margin-left: 4px;
+    border-radius: 50%;
+    top: 8px;
+}
+
+.dot-contact {
+    display: inline-block;
+    position: relative;
+    top: 11px;
+    width: 1px;
+    height: 12px;
+    background-color: #25ca7f;
+    left: 4px;
+}
+
+.angle-contact {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow-portfolio {
+    border: solid #25ca7f;
+    border-width: 1px 0px 0px 1px;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    right: 2px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+}
+
+.arrow-portfolio:hover {
+    top: 5px;
+}
+
+.line-portfolio {
+    position: relative;
+    border: solid 1px #25ca7f;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    margin-left: 2.4px;
+    border-radius: 50%;
+    top: 8px;
+}
+
+.dot-portfolio {
+    display: inline-block;
+    position: relative;
+    top: 11px;
+    width: 1px;
+    height: 12px;
+    background-color: #25ca7f;
+    left: 2.5px;
+}
+
+.angle-portfolio {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow-testimone {
+    border: solid #25ca7f;
+    border-width: 0px 1px 1px 0px;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    right: .7px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+}
+
+.arrow-testimone:hover {
+    top: 5px;
+}
+
+.line-testimone {
+    position: relative;
+    border: solid 1px #25ca7f;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    margin-left: 4px;
+    border-radius: 50%;
+    top: 8px;
+}
+
+.dot-testimone {
+    display: inline-block;
+    position: relative;
+    top: 11px;
+    width: 1px;
+    height: 12px;
+    background-color: #25ca7f;
+    left: 4px;
+  
+}
+
+.angle-testimone {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/*................. End of navigation.......................  */
+
+
+/*.................... Home section .......................... */
+
+.home-section .home-banner {
+    color: #ffffff;
+    position: absolute;
+    padding: 0;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    top: -69px;
+    background-color: #095d22;
+
+}
+
+.home-section .home-banner .name {
+    margin-top: 30%;
+}
+
+
+.home-section h1 {
+    font-size: 50px;
+    text-transform: capitalize;
+    visibility: visible;
+}
+
+.home-section h5 {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 0 50px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    text-transform: capitalize;
+    visibility: visible;
+
+}
+.home-section .section-title::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 70%;
+    top: 15%;
+    right: -4%;
+    background-color: #333 !important;
+}
+
+#container {
+    color: #ffffff;
+  }
+  
+  .canvas-wrap {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      bottom: 0%;
+      width: 100% !important;
+      
+  }
+  
+  #main {
+      width: 100% !important;
+      height: 80%;
+      position: absolute;
+      top: 25%;
+      color: white;
+      left: 5%;
+  }
+  
+  .h-right {
+      position: relative;
+      display: inline-block;
+  
+  }
+  .left-center {
+      margin-left: -38%;
+      margin-bottom: -3%;
+      left: -10%;
+  }
+  
+  .left-down {
+      left: -43%;
+  }
+  .rotate {
+      animation: rotation 18s infinite linear;
+  }
+  
+  @keyframes rotation {
+      from {
+          transform: rotateY(0deg);
+      }
+  
+      to {
+          transform: rotateY(359deg);
+      }
+  }
+  .p-footer {
+      display: flex;
+      padding-top: 0%;
+      margin-top: 3px;
+  
+  }
+  
+  .p-footer .tell-me {
+      display: flex;
+      margin-left: 30% !important;
+      margin-right: 5%;
+  
+  }
+  
+  .custom-home {
+      display: flex;
+      margin-left: 20%;
+  }
+  
+  .custom-home .h-right {
+      margin-left: 5%;
+      color: #333;
+  
+  }
+  
+  .custom-home .section-title h2 {
+      font-size: 64px;
+  }
+/* ...........End of home section..........    */
+
+
+
+
+/* .......................About Section .................... */
+
+.about-info {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 9;
+
+}
+
+.about-info p {
+    line-height: 28px;
+    font-size: 18px;
+
+}
+
+.about-section .goal::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 18%;
+    top: 46%;
+    left: 26%;
+    background-color: #333 !important;
+}
+
+/* ........................Service Section.............................  */
+.services i {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-left: -25px;
+
+}
+.services .icon .fa {
+    top: 8%;
+    bottom: 10% !important;
+    color: #25ca7c;
+}
+
+.services h6 {
+    margin-top: 10% !important;
+}
+
+.services {
+    position: relative;
+    padding: 1%;
+    width: 98%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+}
+
+.services .content {
+    float: left;
+    width: 98%;
+}
+
+.services .content .box {
+    width: 32.5%;
+    float: left;
+    margin: 2.5px;
+    border: .0001px solid #333333;
+
+}
+
+.services .content .box .inner {
+    padding: 4px;
+    text-align: center;
+    position: relative;
+}
+
+
+/*.............. Portfolio Section ............................ */
+.portfolios .content {
+    float: left;
+    margin-left: 0%;
+
+}
+
+.portfolios .icon h6 {
+    padding: 5px;
+}
+
+.portfolios .content .box {
+    width: 31.5%;
+    float: left;
+    margin: 3.5px;
+    border: .0001px solid #333333;
+
+}
+.portfolio-info {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portfolio-info p {
+    top: -10%;
+}
+
+
+/* ....................Contact Section............... */
+.contact-section .item:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 70%;
+    top: 25%;
+    left: 49%;
+    background-color: #333 !important;
+}
+
+.contact-section p span {
+    color: #25ca7c;
+}
+
+.goal {
+    font-style: italic;
+    margin-left: 21%;
+    padding-right: 1.3em;
+    padding-left: 1em;
+    color: #333;
+    
+}
+
+.testimonial-section .box .section-title h2,
+.portfolio-section .box .section-title h2,
+.service-section .box .section-title h2 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.testimonial-section .box .section-title h2 {
+    margin-top: 20px !important;
+    margin-bottom: 30px !important;
+}
+.service-section .service-info {
+    display: flex;
+}
+
+.service-info .icon {
+    border: 1px solid #25ca7f;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 35%;
+    top: 20px;
+}
+.col .fa {
+    margin-right: 10%;
+}
+
+/* Contact section style  */
+.contact {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    z-index: 99;
+}
+
+.contact-top {
+    display: flex;
+
+
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+}
+.contact-phone {
+    top: 3%;
+    margin-left: 30%;
+    padding-top: 3%;
+    bottom: 5%;
+}
+
+.contact-location {
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.contact-info .left {
+    float: left;
+    width: 49%;
+    height: 50px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.contact-info .right {
+    width: 49%;
+    float: right;
+    height: 50px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+.contact-info .textField {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-info .messageField {
+    height: 100px;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.contact-info .submitButton {
+    margin-top: 0;
+    background-color: transparent;
+    color: #fff;
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.page {
+    position: absolute;
+    left: 14%;
+    top: 10%;
+    position: fixed;
+    width: 78%;
+    height: 80%;
+    overflow: hidden;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    border: 0.9px solid #333;
+    -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+    transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+}
+
+
+
+/* .service-section .box, */
+.portfolio-section .box,
+.contact-section .box {
+    height: 77%;
+}
+
+.about-section {
+    -webkit-transform: translateX(-200%);
+    -ms-transform: translateX(-200%);
+    transform: translateX(-200%);
+}
+
+.testimonial-section,
+.contact-section {
+    -webkit-transform: translateY(200%) !important;
+    -ms-transform: translateY(200%) !important;
+    transform: translateY(200%) !important;
+}
+
+.service-section,
+.portfolio-section {
+    -webkit-transform: translateY(-200%) !important;
+    -ms-transform: translateY(-200%) !important;
+    transform: translateY(-200%) !important;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+}
+
+#home:target .home-section,
+#about:target .about-section,
+#service:target .service-section,
+#contact:target .contact-section,
+#testimonials:target .testimonial-section,
+#portfolio:target .portfolio-section {
+    -webkit-transform: translateX(0%) !important;
+    -ms-transform: translateX(0%) !important;
+    transform: translateX(0%) !important;
+
+}
+
+#home:target .home-section,
+#about:target .about-section,
+#service:target .service-section,
+#portfolio:target .portfolio-section,
+#testimonials:target .testimonial-section,
+#contact:target .contact-section {
+    transition: transform 3s;
+    opacity: 0.9;
+
+}
+
+.header-mobile .header-toggle {
+    float: right;
+}
+
+.service-section {
+    width: 77% !important;
+    color: #ffffff;
+    /* padding: 30px; */
+    text-align: center;
+    display: flex;
+    
+}
+
+.contact-section {
+    width: 77% !important;
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+}
+
+.about-section {
+    width: 77% !important;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+.about-info {
+    justify-content: center;
+
+}
+
+.portfolio-info span,
+.about-info span {
+    font-weight: 1000;
+}
+
+.btn-cv {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 100;
+    z-index: 2;
+
+}
+
+.btn-st {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 100;
+    z-index: 2;
+}
+
+.btn-st:hover {
+    text-decoration: none;
+    color: #25ca7c;
+    box-shadow: rgb(129, 126, 126);
+}
+
+.portfolio-section .section-title,
+.about-section .section-title {
+    display: flex;
+    font-size: 64px;
+    text-transform: capitalize;
+    margin-left: 40%;
+    margin-bottom: 1%;
+}
+
+.testimonial-section .section-title {
+    display: flex;
+    font-size: 64px;
+    top: 10% !important;
+    text-transform: capitalize;
+    margin-left: 40%;
+    margin-bottom: 0;
+}
+
+.about .content .box .inner::before,
+.why-section .content .why-choose-me .inner::before,
+.services .content .box .inner::before,
+.portfolios .content .box .inner::before,
+.resume-section .skill-section .box .inner::before,
+.resume .box .inner::before,
+.contact-section .content .box .inner::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    box-sizing: border-box;
+    height: 0;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    transition: all .8s ease;
+}
+
+.about .content .box .inner::after,
+.why-section .content .why-choose-me .inner::after,
+.services .content .box .inner::after,
+.portfolios .content .box .inner::after .resume-section .skill-section .box .inner::after,
+.resume .content .box .inner::after,
+.contact-section .content .box .inner::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    box-sizing: border-box;
+    height: 0;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transition: all .8s ease;
+}
+
+.about .content .box:hover .inner::after,
+.why-section .content .why-choose-me:hover .inner::after,
+.services .content .box:hover .inner::after,
+
+.resume-section .skill-section .box:hover .inner::after,
+.resume .content .box:hover .inner::after,
+.contact-section .content .box:hover .inner::after {
+    border-color: #25ca7f;
+    width: 100%;
+    height: 100%;
+}
+
+.about .content .box:hover,
+.services .content .box:hover,
+.portfolios .content .box:hover,
+.skill-section:hover,
+.resume .content .box:hover,
+.why-section .content .why-choose-me:hover,
+.contact-section .content .box:hover {
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0.5) !important;
+}
+
+.about .content .box:hover .inner::before,
+.why-section .content .why-choose-me:hover .inner::before,
+.services .content .box:hover .inner::before,
+/* .portfolios .content .box:hover .inner::before, */
+.resume-section .skill-section .box:hover .inner::before,
+.resume .content .box:hover .inner::before,
+.contact-section .content .box:hover .inner::before {
+    border-color: #25ca7f;
+    width: 100%;
+    height: 100%;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo.photo1 {
+    width: 170px;
+    height: 170px;
+    float: left;
+    border-radius: 50%;
+    shape-outside: circle();
+    
+}
+
+.photo img {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+/* Google Map */
+.map {
+    min-width: 300px;
+    min-height: 230px;
+}
+
+.header {
+    color: #36A0FF;
+    height: 70px;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.video-link{
+    color: #25ca7c;
+    text-decoration: none;
+}
+
+.video-link a:hover{
+    text-decoration: none;
+    color: #25ca7f;
+}
+
+.more-info a{
+    color: #25ca7c;
+}
+
+.image-link{
+    color: #25ca7c;
+}
+a:hover{
+    color: #25ca7f;
+    text-decoration: none;
+
+}
+
+.btn-cv {
+    width: 180px;
+    height: 50px;
+    content: '';
+    border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+    background-image: linear-gradient(to right top, #25ca7f, #25ca7f, #095d22, #0926, #527);
+    animation: wave 10s linear infinite;
+}
+
+.btn-st {
+    width: 80px;
+    height: 50px;
+    content: '';
+    border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+    background-image: linear-gradient(to right top, #25ca7f, #25ca7f, #095d22, #0926, #527);
+    animation: wave 4s linear infinite;
+}
+
+@keyframes wave {
+    20% {
+        border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+    }
+
+    40% {
+        border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+    }
+
+    60% {
+        border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+    }
+
+    80% {
+        border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+    }
+
+}
+
+.testimonial-section img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 9%;
+}
+
+.img-text h3 {
+     color: #25ac7a;
+    font-family: 'Niconne', 'cursive';
+    margin-top: 10px;
+    text-transform: capitalize;
+
+}
+
+.img-text h6 {
+    margin-top: 10px !important;
+}
+/* ---------------------------------
+		 Responsible Css
+--------------------------------- */
+@media screen and (max-width: 991px) {
+    .home-section .banner h1 {
+        font-size: 20px;
+    }
+
+    .home-section .banner p {
+        font-size: 25px;
+    }
+
+    .about-section .btn-st {
+        margin: 0 0 20px 20px;
+        left: 50%;
+    }
+
+
+    .hidden-sm {
+        display: none;
+    }
+
+    .width-sm {
+        width: 50%;
+        float: left;
+    }
+
+    .contact-section .contact-info .info {
+        margin-bottom: 40px;
+    }
+
+    .page .mob-box-mt {
+        margin-top: 100px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        width: 60%;
+    }
+
+    .pt-resume .experience .item {
+        position: relative;
+        padding-top: 15px;
+        left: -40px;
+        margin-bottom: 23px;
+
+    }
+
+    .top-link {
+        margin-left: 1.5%;
+        position: relative;
+        height: 60px;
+        padding-left: 30%;
+
+    }
+
+    .top-link li {
+        display: inline-flex;
+
+    }
+
+    .top-link .upper-right {
+        margin-right: 1%;
+    }
+
+    .top-link .upper-left {
+        padding-right: 20%;
+    }
+
+    .footer p {
+        position: absolute;
+        left: 20%;
+        color: #fff !important;
+        bottom: 3% !important;
+        display: inline-block;
+        font-size: 8px;
+        font-weight: 800;
+        font-family: "Montserrat", sans-serif;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .section-title h2 {
+        font-size: 14px;
+    }
+    .page{
+        left: 16%;
+    }
+    .contact-section {
+        padding: 10px;
+    }
+    .contact-section .item:before {
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 0%;
+        top: 0%;
+        left: 49%;
+        background-color: #333 !important;
+    }
+
+    .logo {
+        margin: -2px;
+        float: left;
+        padding: 2px;
+    }
+
+    .logo img {
+        height: 57px;
+        width: 57px;
+        padding-top: 13px;
+    }
+
+    .services .content .box {
+        width: 100% !important;
+        border: .0001px solid #333333;
+
+    }
+
+    .top-link .upper-right {
+        left: 2%;
+    }
+
+    .top-link .upper-right {
+       left: 5%;
+    }
+
+    .top-link {
+        left: 0%;
+        position: relative;
+    }
+
+    .top-link {
+        position: absolute;
+        display: flex;
+        left: 15% !important;
+
+    }
+
+    .top-link .upper-right {
+        padding-top: 20px !important;
+        position: absolute;
+    }
+
+    .top-link .upper-left {
+        position: relative;
+        width: 160px;
+    }
+
+}
