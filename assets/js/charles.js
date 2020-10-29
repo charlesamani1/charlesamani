@@ -8,8 +8,8 @@ $(".portfolios .image-link").magnificPopup({
 
 const config = {};
 config.container = document.querySelector('.canvas-wrap');
-config.height = window.innerHeight-48;
-config.width = window.innerWidth-288;
+config.height = window.innerHeight-52;
+config.width = window.innerWidth-292;
 config.halfX = config.width / 2;
 config.halfY = config.height / 2;
 config.aspectRatio = config.height / config.width;
@@ -106,32 +106,7 @@ jQuery(function ($) {
 	init_map1();
 
 });
-const button = document.querySelector('.js-button'),
-overlay = document.querySelector('.js-overlay'),
-email = document.querySelector('.js-email'),
-copy = document.querySelector('.js-copy'),
-clientSelect = document.querySelector('.js-client-select'),
-clientOpen = document.querySelector('.js-client-open');
 
-button.addEventListener('click', function () {
-  email.classList.add('email--is-active');
-});
-
-overlay.addEventListener('click', function () {
-  email.classList.remove('email--is-active');
-});
-
-clientSelect.addEventListener('change', function () {
-  let clientSelection = clientSelect.value;
-
-  if (clientSelection === 'mailto:example@gmail.com') {
-    clientOpen.setAttribute('href', clientSelection);
-    clientOpen.removeAttribute('target');
-  } else {
-    clientOpen.setAttribute('href', clientSelection);
-    clientOpen.setAttribute('target', '_blank');
-  }
-});
 
 // new Clipboard('.js-copy');
 
