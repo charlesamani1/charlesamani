@@ -8,8 +8,8 @@ $(".portfolios .image-link").magnificPopup({
 
 const config = {};
 config.container = document.querySelector('.canvas-wrap');
-config.height = window.innerHeight-52;
-config.width = window.innerWidth-350;
+config.height = window.innerHeight-60;
+config.width = window.innerWidth-340;
 config.halfX = config.width / 2;
 config.halfY = config.height / 2;
 config.aspectRatio = config.height / config.width;
