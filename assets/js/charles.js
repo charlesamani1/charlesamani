@@ -9,7 +9,7 @@ $(".portfolios .image-link").magnificPopup({
 const config = {};
 config.container = document.querySelector('.canvas-wrap');
 config.height = window.innerHeight-70;
-config.width = window.innerWidth-370;
+config.width = window.innerWidth-360;
 config.halfX = config.width / 2;
 config.halfY = config.height / 2;
 config.aspectRatio = config.height / config.width;
